@@ -14,7 +14,7 @@ mcnuggetred n =
 
 coinprobcombs :: Integral a => a -> [a] -> [[a]]
 coinprobcombs n []     = []
-coinprobcombs n (v:vs) = [map (* v) [0..div n v]] ++ coinprobcombs n vs
+coinprobcombs n (v:vs) = map (* v) [0..div n v] : coinprobcombs n vs
 
 coinprob :: Integral a => a -> [a] -> [[a]]
 coinprob n vars =
@@ -29,5 +29,5 @@ coinprobred n vars =
 divlist :: Integral a => [a] -> [a] -> [a]
 divlist []     _      = []
 divlist _      []     = []
-divlist (x:xs) (y:ys) = [div y x] ++ divlist xs ys
+divlist (x:xs) (y:ys) = div y x : divlist xs ys
 
