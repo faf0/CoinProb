@@ -1,6 +1,6 @@
-### CoinProb
+## CoinProb
 
-## About
+### About
 
 Check out http://en.wikipedia.org/wiki/Coin_problem for a description of the coin problem.
 
@@ -14,7 +14,7 @@ CoinProb also allows to compute solutions for the special McNugget case where a_
 
 The underlying algorithm of CoinProb cycles through possible instances of k_1, k_2, ..., k_n. However, there are more efficient approaches to solve this problem (cf., e.g., "Faster Algorithms for Frobenius Numbers" by Beihoffer et al.).
 
-## Examples
+### Examples
 
 The *red functions yield a list of possible k_1, k_2, ..., k_n combinations, whereas the other functions yield a list of possible k_1 * a_1, k_2 * a_2, ..., k_n * a_n combinations.
 
@@ -27,7 +27,7 @@ The *red functions yield a list of possible k_1, k_2, ..., k_n combinations, whe
     mcnugget 44
       [[6,18,20],[24,0,20]]
 
-## Copyright
+### Copyright
 
 Copyright 2014 Fabian Foerg
 
